@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * palidome - 
+ * palindrome - checks if linked list is palindrome
  * @top: pointer to a pointer to a singly linked list
  * @next: pointer to a singly linked list
  * Return: integer
@@ -14,7 +14,11 @@ int palindrome(listint_t **top, listint_t *next)
 	{
 		return (1);
 	}
-	if (palindrome(top, next->next) && ((*top)->n == next->n)) r = 1;
+	if (palindrome(top, next->next) && ((*top)->n == next->n))
+	{
+		r = 1;
+	}
+
 	*top = (*top)->next;
 
 	return (r);
