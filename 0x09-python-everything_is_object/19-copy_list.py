@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-def copy_list910:
-    new = 1[:]
-    return new
+def copy_list(_list):
+    return _list[:]
